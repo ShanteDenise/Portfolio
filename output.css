@@ -249,16 +249,14 @@ nav li a:hover {
 }
 .aboutMe {
   height: 70vh;
-  background-color: #fff;
-  background: url("https://www.fg-a.com/wallpapers/white-marble-3-2018.jpg");
   background-attachment: fixed;
-  border-top: solid 20px #6b31de;
-  border-bottom: solid 20px #6b31de;
+  border-bottom: solid 20px #262cac;
 }
 .aboutMe .aboutme-bio {
+  font-family: "Barlow Condensed", sans-serif;
   height: 100%;
-  width: 100%;
-  padding: 10% 15%;
+  width: 50%;
+  padding: 10% 5%;
   text-align: center;
 }
 .aboutMe .content {
@@ -270,7 +268,7 @@ nav li a:hover {
   overflow: hidden;
   font-family: "Lato", sans-serif;
   font-size: 35px;
-  color: #17758d;
+  color: #fff;
 }
 .aboutMe .content__container {
   font-weight: 600;
@@ -290,7 +288,7 @@ nav li a:hover {
 .aboutMe .content__container:after, .aboutMe .content__container:before {
   position: absolute;
   top: 0;
-  color: #262cac;
+  color: yellow;
   font-size: 42px;
   line-height: 40px;
   -webkit-animation-name: opacity;
@@ -630,16 +628,6 @@ input:focus, textarea:focus {
   border-top-right-radius: 14px;
 }
 
-.project-card__image--barbarian {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
-}
-.project-card__image--barbarian img {
-  width: 40px;
-  position: absolute;
-  top: -65px;
-  left: -70px;
-}
-
 .project-card__image--project2 {
   background: url("https://purple-door.ca/wp-content/uploads/2016/08/311366-purple.jpg");
 }
@@ -691,8 +679,8 @@ input:focus, textarea:focus {
   margin-bottom: 3px;
 }
 
-.project-card__level--barbarian {
-  color: #EC9B3B;
+.project-card__level--project1 {
+  color: #82BB30;
 }
 
 .project-card__level--project2 {
@@ -701,10 +689,6 @@ input:focus, textarea:focus {
 
 .project-card__level--project3 {
   color: #ff009d;
-}
-
-.project-card__level--project1 {
-  color: #82BB30;
 }
 
 .project-card__level--project4 {
@@ -723,8 +707,8 @@ input:focus, textarea:focus {
   margin-bottom: 10px;
 }
 
-.project-card__unit-stats--barbarian {
-  background: #EC9B3B;
+.project-card__unit-stats--project1 {
+  background: #82BB30;
 }
 
 .project-card__unit-stats--project2 {
@@ -735,18 +719,8 @@ input:focus, textarea:focus {
   background: #ff009d;
 }
 
-.project-card__unit-stats--project1 {
-  background: #82BB30;
-}
-.project-card__unit-stats--project1 .one-third {
-  border-right: 1px solid #71a32a;
-}
-
 .project-card__unit-stats--project4 {
   background: #027764;
-}
-.project-card__unit-stats--project4 .one-third {
-  border-right: 1px solid #01594b;
 }
 
 .project-card__unit-stats {
@@ -773,11 +747,6 @@ input:focus, textarea:focus {
   background-color: #6b31de;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
-}
-.project-card__unit-stats .stat {
-  position: relative;
-  font-size: 20px;
-  margin-bottom: 10px;
 }
 .project-card__unit-stats .no-border {
   border-right: none;

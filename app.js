@@ -1,5 +1,5 @@
 
-  
+    emergence.init();
     var slideContainer = $('.slide-container');
 
     slideContainer.slick();
