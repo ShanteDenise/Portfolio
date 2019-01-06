@@ -6,7 +6,7 @@ $black: #000;
 $border-radius-size: 14px;
 $barbarian: #EC9B3B;
 $green: #82BB30;
-$blue: #035e4e;
+$blue: #027764;
 $grey: #333333;
 $pinkish: rgb(255, 0, 157);
 
@@ -17,7 +17,7 @@ $text-padding: .4rem;
 $tween: 25px;
 
 // animations
-$animation-unit: 500ms;
+$animation-unit: 650ms;
 $slideOut: $animation-unit * 1.5;
 $slideStudios: $animation-unit * 3;
 
@@ -81,7 +81,7 @@ nav li a {
 	background-image: url('https://images.unsplash.com/photo-1532289402244-3cbf8bdeb722?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
 }
 
-.projects{
+#projects{
 	height: 100vh;
 	background-color: $grey;
 }
@@ -172,7 +172,7 @@ nav li a {
 // Cue all the animations when run-animation class is activated
 .wrapper.run-animation {
 	animation: shrink ease-out ($animation-unit * 16) forwards ($animation-unit * 2);
-	.marvel {
+	.port {
 	transform: translateX($tween);
 	animation: slide-out-X $slideOut ease forwards;
 }
@@ -282,7 +282,150 @@ nav li a {
 	}
 }
 
-// Contact form
+//----------------About Me Section------------//
+.aboutMe {
+	height:70vh;
+	background-color: $white;
+
+.aboutme-bio{
+		height: 100%;
+		width: 100%;
+		padding: 15% 15%;
+		color:$darkpurple;
+	}
+	
+	.content {
+	margin-top:30%;	
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow:hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  color: #17758d;
+  &__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+
+    &:before {
+      content: '{';
+      left: 0;
+    }
+
+    &:after {
+      content: '}';
+      position: absolute;
+      right: 0;
+    }
+
+    &:after, &:before {
+      position: absolute;
+      top: 0;
+      color: $darkpurple;
+      font-size: 42px;
+			line-height: 40px;
+
+      -webkit-animation-name: opacity;
+      -webkit-animation-duration: 2s;
+			-webkit-animation-iteration-count: infinite;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    &__text {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
+
+    &__list {
+      margin-top: 0;
+      padding-left: 110px;
+      text-align: left;
+      list-style: none;
+      
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+
+      &__item {
+        line-height:40px;
+        margin:0;
+      }
+    }
+	}
+	
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+}
+
+
+
+
+
+//---------------------------------- Contact form
 
 
 #form-main{
@@ -443,8 +586,9 @@ input:focus, textarea:focus {
 		// margin-right: 3%;
 		width: 100%;
 		// margin-left: 0;
-	
 	}
+	
+
 }
 
 
@@ -460,7 +604,7 @@ input:focus, textarea:focus {
 
 .wrapper {
   padding-top: 40px;
-  padding-bottom: 40px;
+	padding-bottom: 40px;
   
   &:focus {
     outline: 0;
@@ -470,7 +614,7 @@ input:focus, textarea:focus {
 
 
 .project-card {
-  background: white;
+  background: $white;
   width: 50%;
   display: inline-block;
   margin: auto;
@@ -500,7 +644,7 @@ input:focus, textarea:focus {
 }
 
 .project-card__image--project2 {
-  background: url('https://i2.wp.com/www.123freevectors.com/wp-content/original/4712-yellow-blurry-background.jpg?w=600');
+  background: url('https://purple-door.ca/wp-content/uploads/2016/08/311366-purple.jpg');
   img {
     width: 20rem;
     height:20rem;
@@ -522,14 +666,14 @@ input:focus, textarea:focus {
 }
 
 .project-card__image--project1 {
-  background: url('https://purple-door.ca/wp-content/uploads/2016/08/311366-purple.jpg');
+	background: url('https://sftextures.com/texture/5510/1/5511/green-shades-blurred-tree-background-bright-abstract-dark-and-light-areas-brown-spots-natural-color-512x288.png'),fixed;
   img {
+		width:150%;
 		position: absolute;   
 		top:50%;
 		left:50%;
-		transform: translate(-50%, -50%);	 
-  
-  }
+		transform: translate(-50%, -50%);
+	}
 }
 
 .project-card__image--project4 {
@@ -586,26 +730,14 @@ input:focus, textarea:focus {
 
 .project-card__unit-stats--barbarian {
   background: $barbarian;
-  
-  .one-third {
-     border-right: 1px solid #BD7C2F;
-  }
 }
 
 .project-card__unit-stats--project2 {
   background: $purple;
-  
-  .one-third {
-     border-right: 1px solid $darkpurple;
-  }
 }
 
 .project-card__unit-stats--project3 {
-  background: $darkpurple;
-  
-  .one-third {
-     border-right: 1px solid darken($darkpurple, 8%);
-  }
+  background: $pinkish;
 }
 
 .project-card__unit-stats--project1 {
