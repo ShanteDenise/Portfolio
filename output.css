@@ -245,12 +245,16 @@ nav li a {
 .aboutMe {
   height: 70vh;
   background-color: #fff;
+  background: url("https://www.fg-a.com/wallpapers/white-marble-3-2018.jpg");
+  background-attachment: fixed;
+  border-top: solid 20px #6b31de;
+  border-bottom: solid 20px #6b31de;
 }
 .aboutMe .aboutme-bio {
   height: 100%;
   width: 100%;
-  padding: 15% 15%;
-  color: #262cac;
+  padding: 10% 15%;
+  text-align: center;
 }
 .aboutMe .content {
   margin-top: 30%;
