@@ -293,7 +293,6 @@ nav li a {
 .aboutMe {
 	height:70vh;
 	background-attachment: fixed;
-	border-bottom:solid 20px $darkpurple;
 
 .aboutme-bio{
 	font-family: $default-font;
@@ -302,6 +301,20 @@ nav li a {
 		padding: 10% 5%;
 		text-align: center;
 	}
+	.about-para[data-emergence=hidden]{
+		 display: none;	
+}
+	.about-para[data-emergence=visible]{
+		display: block;
+}
+.about-para{
+	color: black;
+	box-shadow: 10px 10px 6px #5709bd54;
+	background-color:$white;
+	border:solid 25px white;
+	
+	
+}
 	
 	.content {
 	margin-top:30%;	

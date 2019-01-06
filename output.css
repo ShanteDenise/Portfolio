@@ -250,7 +250,6 @@ nav li a:hover {
 .aboutMe {
   height: 70vh;
   background-attachment: fixed;
-  border-bottom: solid 20px #262cac;
 }
 .aboutMe .aboutme-bio {
   font-family: "Barlow Condensed", sans-serif;
@@ -258,6 +257,18 @@ nav li a:hover {
   width: 50%;
   padding: 10% 5%;
   text-align: center;
+}
+.aboutMe .about-para[data-emergence=hidden] {
+  display: none;
+}
+.aboutMe .about-para[data-emergence=visible] {
+  display: block;
+}
+.aboutMe .about-para {
+  color: black;
+  box-shadow: 10px 10px 6px #5709bd54;
+  background-color: #fff;
+  border: solid 25px white;
 }
 .aboutMe .content {
   margin-top: 30%;
