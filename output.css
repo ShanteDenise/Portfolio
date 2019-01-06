@@ -34,6 +34,11 @@ nav li a {
   color: #757575;
   text-transform: uppercase;
 }
+nav li a:hover {
+  color: #fff;
+  font-size: 20px;
+  cursor: cell;
+}
 
 .fixed {
   position: fixed;

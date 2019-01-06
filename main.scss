@@ -51,11 +51,17 @@ nav {
 nav li {
 	display: inline-block;
 	padding: 1% 2%;
+
 }
 
 nav li a {
 	color: #757575;
 	text-transform: uppercase;
+		&:hover{
+			color:$white;
+			font-size: 20px;
+			cursor: cell;
+		}
 }
 
 .fixed {
