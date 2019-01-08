@@ -35,10 +35,10 @@ emergence.init({
       $('.about-para').hide();
       console.log('state is hidden with no reset')
     } else if (state === 'reset') {
-      $('.about-para').show(300)
+      $('.about-para').show(2300)
       console.log('Element is hidden with reset.');
     } else if (state === 'visible') {
-      $('.about-para').show(1400);
+      $('.about-para').show(3000);
       console.log('Element is visible.');
     }
   }
