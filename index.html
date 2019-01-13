@@ -42,7 +42,7 @@
 
     <div id="aboutMe">
           <div class="content">
-              <div class="content__container">
+              <!-- <div class="content__container">
                 <p class="content__container__text">
                   Hello
                 </p>
@@ -53,13 +53,14 @@
                   <li class="content__container__list__item">Recruiters !</li>
                   <li class="content__container__list__item">Everyone !</li>
                 </ul>
-              </div>
+              </div> -->
           </div>
                      
           <div class="aboutme-container">
               <img src="img/IMG_0184.png" id="about-pic"/>
            
             <div class="aboutme-bio">
+              <h1 id="aboutMe-title">About Me</h1>
       
         <p class="about-para" data-emergence="hidden"> My name is <strong>Shante Austin</strong> & I am a <strong>Full Stack Web Developer</strong> based in <strong>Atlanta, Georgia</strong>. I created this website to display the projects created over the course of 
           12 weeks at General Assembly's Web Immersive class. I made the courageous decision to leave my old life for one that allowed me the freedom to <strong>LEARN</strong> continously, to <strong>CREATE</strong> endlessly, and to express myself in a way I have never done before.
@@ -67,7 +68,7 @@
           around at some of my works in progress and search my skills to see if I can help you. 
                  
         </p>
-        <button id="skills-button">Skills</button>
+        <button id="button-blue">Skills</button>
       </div>
       
     </div>
@@ -198,21 +199,21 @@
 
     <!-- contact form section -->
 
-
-    <div id="form-main" class="animated flipInX">
+    <div id="form-messages"></div>
+    <div id="form-main">
         <div id="form-div">
-          <form class="form" id="form1">
+          <form class="form" id="form1" action=mailer.php method="POST">
             
             <p class="name">
-              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required />
             </p>
             
             <p class="email">
-              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required />
             </p>
             
             <p class="text">
-              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+              <textarea name="comment" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"required></textarea>
             </p>
                                 
             <div class="submit">
@@ -230,11 +231,13 @@
               </div>
               <p>Copyright © 2019 Shante Austin</p>
         </div>
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emergence.js/1.1.2/emergence.min.js"></script>
 

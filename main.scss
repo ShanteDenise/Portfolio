@@ -329,23 +329,28 @@ nav li a {
 	height:70vh;
 }
 
+
 #aboutMe {
-	height:70vh;
-	background-color: rgba(255, 255, 255, 0.988);
-	background-attachment: fixed;
+	height:100vh;
+	background-image:linear-gradient(
+		rgba(1, 0, 1, 0.863),
+		rgba(0, 0, 0, 0.753)),
+	url(https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=626&q=80);
+	background-attachment: fixed; 
+	background-size: cover;
 
 	.aboutme-container{
 		display: flex;
+		// background-color: $grey
 	}
 
 .aboutme-bio{
-	font-family: sans-serif;
 		font-weight: 100;
-		font-size:20px;
-		height: 100%;
+		font-size:22px;
+		height: 90%;
 		width: 70%;
 		padding: 10% 5%;
-		text-align: center;
+		text-align: left;
 		
 	}
 	.about-para[data-emergence=hidden]{
@@ -355,17 +360,16 @@ nav li a {
 		display: block;
 }
 .about-para{
-	color:$grey;
+	color: white;
+	// color:$grey;
 	word-spacing: .03rem;
 }
 #about-pic{
 	height: 20rem;
 	width:30%;
-	margin-top:7rem;
+	margin-top:15rem;
 	margin-left: 2%;
 	box-shadow: 10px 10px 18px #21182b57;
-	filter:grayscale(100);
-	-webkit-filter:grayscale(100);
 }
 
 
@@ -496,6 +500,11 @@ nav li a {
 }
 }
 
+#aboutMe-title{
+	color: $darkpurple; 
+}
+
+
 #skills-button{
 	background-color: $purple;
 	color:white;
@@ -526,7 +535,6 @@ nav li a {
 
 
 #form-main{
-	width:100%;
 	margin-left: auto;
   margin-right: auto;
 	padding-top:10%;
@@ -685,8 +693,12 @@ input:focus, textarea:focus {
 		margin-right: auto;
 		margin-top:15%;
 		// margin-right: 3%;
-		width: 100%;
+		width: 100vh;
 		// margin-left: 0;
+	}
+	#form-main{
+		background-color: $white;
+		width: 100vh;
 	}
 	
 
