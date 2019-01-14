@@ -332,16 +332,11 @@ nav li a {
 
 #aboutMe {
 	height:100vh;
-	background-image:linear-gradient(
-		rgba(1, 0, 1, 0.863),
-		rgba(0, 0, 0, 0.753)),
-	url(https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=626&q=80);
-	background-attachment: fixed; 
-	background-size: cover;
-
+	 background-color: white;
+	
 	.aboutme-container{
 		display: flex;
-		// background-color: $grey
+	
 	}
 
 .aboutme-bio{
@@ -360,8 +355,7 @@ nav li a {
 		display: block;
 }
 .about-para{
-	color: white;
-	// color:$grey;
+	color:$grey;
 	word-spacing: .03rem;
 }
 #about-pic{
@@ -373,7 +367,6 @@ nav li a {
 }
 
 
-	
 	.content {
 	margin-top:30%;	
   position: absolute;
@@ -501,7 +494,7 @@ nav li a {
 }
 
 #aboutMe-title{
-	color: $darkpurple; 
+	color: $purple; 
 }
 
 
@@ -644,7 +637,7 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-#button-blue{
+#button-blue, #button-blue2{
 	font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
 	float:left;
 	width: 100%;
@@ -686,15 +679,17 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
+#button-blue2{
+	background-color: $purple;
+}
+
 @media only screen and (max-width: 580px) {
 	#form-div{
 		left: 3%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top:15%;
-		// margin-right: 3%;
 		width: 100vh;
-		// margin-left: 0;
 	}
 	#form-main{
 		background-color: $white;
@@ -933,12 +928,6 @@ input:focus, textarea:focus {
 .fab:hover{
 	color:white ;
 	font-size: 4rem;	
-
 }
 
-// #skillSearch_True{
-// 	height:50px;
-// 	border: solid;
-// 	background-color: white;
 
-// }

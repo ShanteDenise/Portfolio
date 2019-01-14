@@ -288,9 +288,7 @@ nav li a:hover {
 
 #aboutMe {
   height: 100vh;
-  background-image: linear-gradient(rgba(1, 0, 1, 0.863), rgba(0, 0, 0, 0.753)), url(https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=626&q=80);
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: white;
 }
 #aboutMe .aboutme-container {
   display: flex;
@@ -310,7 +308,7 @@ nav li a:hover {
   display: block;
 }
 #aboutMe .about-para {
-  color: white;
+  color: #333333;
   word-spacing: 0.03rem;
 }
 #aboutMe #about-pic {
@@ -494,7 +492,7 @@ nav li a:hover {
 }
 
 #aboutMe-title {
-  color: #262cac;
+  color: #6b31de;
 }
 
 #skills-button {
@@ -625,7 +623,7 @@ input:focus, textarea:focus {
   background-color: white;
 }
 
-#button-blue {
+#button-blue, #button-blue2 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   float: left;
   width: 100%;
@@ -640,7 +638,7 @@ input:focus, textarea:focus {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-#button-blue:hover {
+#button-blue:hover, #button-blue2:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #262cac;
 }
@@ -664,6 +662,10 @@ input:focus, textarea:focus {
 .submit:hover .ease {
   width: 100%;
   background-color: white;
+}
+
+#button-blue2 {
+  background-color: #6b31de;
 }
 
 @media only screen and (max-width: 580px) {
