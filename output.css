@@ -19,7 +19,7 @@ a {
 nav {
   position: fixed;
   z-index: 50;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   background: #333333;
   text-align: center;
@@ -52,6 +52,9 @@ nav li a:hover {
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
 }
+#searchTerm:hover {
+  border: 3px solid #0080FF;
+}
 
 #searchButton {
   width: 2.5rem;
@@ -68,10 +71,20 @@ nav li a:hover {
   -o-border-radius: 15px;
 }
 #searchButton:hover {
-  background-color: #262cac;
+  background-color: #0080FF;
   border: none;
 }
 
+@media only screen and (max-width: 580px) {
+  nav li a {
+    font-size: 12px;
+  }
+  nav li a:hover {
+    color: #fff;
+    font-size: 15px;
+    cursor: cell;
+  }
+}
 .fixed {
   position: fixed;
   top: 0;
@@ -80,7 +93,6 @@ nav li a:hover {
 }
 
 .images {
-  pointer-events: none;
   height: 100vh;
   top: 0;
   bottom: 0;
@@ -318,66 +330,15 @@ nav li a:hover {
   margin-left: 2%;
   box-shadow: 10px 10px 18px #21182b57;
 }
-#aboutMe .content {
-  margin-top: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  font-family: "Lato", sans-serif;
-  font-size: 35px;
-  color: #262cac;
+@media only screen and (max-width: 580px) {
+  #aboutMe .aboutme-bio {
+    width: 100%;
+  }
+  #aboutMe .about-para {
+    font-size: 15px;
+  }
 }
-#aboutMe .content__container {
-  font-weight: 600;
-  overflow: hidden;
-  height: 40px;
-  padding: 0 40px;
-}
-#aboutMe .content__container:before {
-  content: "[";
-  left: 33%;
-}
-#aboutMe .content__container:after {
-  content: "]";
-  position: absolute;
-  right: 0;
-}
-#aboutMe .content__container:after, #aboutMe .content__container:before {
-  position: absolute;
-  top: 0;
-  color: #82BB30;
-  font-size: 42px;
-  line-height: 40px;
-  -webkit-animation-name: opacity;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: opacity;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-#aboutMe .content__container__text {
-  display: inline;
-  float: left;
-  margin: 0;
-}
-#aboutMe .content__container__list {
-  margin-top: 0;
-  padding-left: 110px;
-  text-align: left;
-  list-style: none;
-  -webkit-animation-name: change;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: change;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-#aboutMe .content__container__list__item {
-  line-height: 40px;
-  margin: 0;
-}
+
 @-webkit-keyframes opacity {
   0%, 100% {
     opacity: 0;
@@ -490,27 +451,8 @@ nav li a:hover {
     transform: translate3d(0, -25%, 0);
   }
 }
-
 #aboutMe-title {
   color: #6b31de;
-}
-
-#skills-button {
-  background-color: #6b31de;
-  color: white;
-  padding: 1% 5%;
-  font-size: 15px;
-  font-weight: 400;
-  border: none;
-  transition-duration: 1s;
-  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
-  text-transform: uppercase;
-}
-#skills-button:hover {
-  padding: 1% 15%;
-  margin: 0.1%;
-  transition-duration: 1s;
-  background-color: #82BB30;
 }
 
 #form-main {
@@ -669,6 +611,28 @@ input:focus, textarea:focus {
 }
 
 @media only screen and (max-width: 580px) {
+  #button-blue {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #262cac;
+    color: #fff;
+    font-size: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #button-blue:hover {
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+    color: #262cac;
+  }
+
   #form-div {
     left: 3%;
     margin-left: auto;
@@ -680,6 +644,16 @@ input:focus, textarea:focus {
   #form-main {
     background-color: #fff;
     width: 100vh;
+  }
+
+  .slick-prev {
+    z-index: 99;
+    left: 100px !important;
+  }
+
+  .slick-next {
+    z-index: 99;
+    right: 100px !important;
   }
 }
 #projects-title {
@@ -695,7 +669,7 @@ input:focus, textarea:focus {
 
 .slide-container {
   margin: auto;
-  width: 600px;
+  width: 37rem;
   text-align: center;
 }
 
@@ -803,7 +777,7 @@ input:focus, textarea:focus {
 
 .project-card__unit-description {
   overflow: auto;
-  padding: 20px;
+  padding: 12px;
   margin-bottom: 10px;
 }
 
@@ -870,6 +844,7 @@ input:focus, textarea:focus {
 }
 
 .footer {
+  width: 100vw;
   color: #757575;
   margin-top: 10%;
   height: 6rem;
@@ -891,6 +866,27 @@ input:focus, textarea:focus {
 .fab:hover {
   color: white;
   font-size: 4rem;
+}
+
+@media only screen and (min-width: 412px) and (max-width: 425px) {
+  .aboutme-container {
+    display: block;
+  }
+
+  .aboutme-bio {
+    font-weight: 100;
+    font-size: 20px;
+    height: 90%;
+    text-align: center;
+  }
+}
+@media only screen and (width: 375px) {
+  .aboutme-bio {
+    font-weight: 100;
+    font-size: 25px;
+    height: 90%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
